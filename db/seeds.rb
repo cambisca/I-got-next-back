@@ -27,7 +27,48 @@ pier2 = Court.create(
     img_url: "https://i.pinimg.com/originals/53/4b/90/534b906a95f243fc0cec1c63f9af72a7.jpg"
 )
 
+west4th = Court.create(
+    name: "West 4th", 
+    address: "272 6th ave", 
+    borough: "New York", 
+    zip_code: 10012, 
+    condition: "Aight", 
+    latitude: 40.73215418335328, 
+    longitude: -74.0007750693177,
+    trains: [ "A", "C", "E", "B", "D", "F", "M" ],
+    img_url: "https://c8.alamy.com/comp/BN4WFK/basketball-court-west-4th-street-nyc-BN4WFK.jpg"
+)
+
+rucker = Court.create(
+    name: "Rucker Park", 
+    address: "280 W 155th St",
+    borough: "New York", 
+    zip_code: 10039,
+    condition: "Great",
+    latitude: 40.83011639348857, 
+    longitude: -73.93625534602346, 
+    trains: [ "C", "B", "D", "3" ],
+    img_url: "https://pbs.twimg.com/media/DJuebSVWkAAZVaX.jpg"
+)
+
+batterypark = Court.create(
+    name: "Battery Park", 
+    address: "20 River Terrace", 
+    borough: "New York", 
+    zip_code: 10282,
+    condition: "Aight", 
+    latitude: 40.71724246291141, 
+    longitude: -74.0164967182197, 
+    trains: [ "A", "C", "E", "2", "3", "F"],
+    img_url: "https://c8.alamy.com/comp/E62F2T/basketball-court-at-nelson-a-rockefeller-park-in-battery-park-city-E62F2T.jpg"
+)
+
 run1 = Run.create(name: "Brooklyn Bridge Park", user_id: 1, court_id: 1)
+run2 = Run.create(name: "Brooklyn Bridge Park", user_id: 2, court_id: 1)
+run3 = Run.create(name: "Brooklyn Bridge Park", user_id: 3, court_id: 1)
+run4 = Run.create(name: "Brooklyn Bridge Park", user_id: 4, court_id: 1)
+run5 = Run.create(name: "West 4th", user_id: 5, court_id: 1)
+run6 = Run.create(name: "West 4th", user_id: 6, court_id: 1)
 
 
 puts "Data is seeded!"
