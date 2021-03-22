@@ -7,9 +7,16 @@ class UsersController < ApplicationController
     end 
 
     def show 
-        user = User.find(params[:id])
-
+        user = User.first 
+    
         render json: user
     end 
+
+    def login 
+        user = User.first 
+    
+        render json: user
+    end 
+
 
 end

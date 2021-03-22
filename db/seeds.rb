@@ -7,13 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-cam = User.create(name: "Cam", password: "abc123", age: 27, height: "5ft 9in", location: "Brooklyn", position: "PG/SG", style: "Facilitator/Bucket getter/Steve Nash")
-massi = User.create(name: "Massi", password: "abc123", age: 31, height: "5ft 3in", location: "Queens", position: "PG", style: "Scrappy defender/Patrick Beverly")
-hasibul = User.create(name: "Hasibul", password: "abc123", age: 28, height: "6ft 1in", location: "Staten Island", position: "SF", style: "Rim protector/lob finisher/Young Blake Griffin")
-crunchy = User.create(name: "Crunchy", password: "abc123", age: 27, height: "5ft 11in", location: "Brooklyn", position: "SF", style: "The enforcer/sets tough screens/Kendrick Perkins")
-robin = User.create(name: "Robin", password: "abc123", age: 27, height: "6ft 3in", location: "Brooklyn", position: "PF", style: "Stretch 4/Kristaps Porzingis")
-ak = User.create(name: "AK", password: "abc123", age: 28, height: "5ft 7in", location: "Brooklyn", position: "PG", style: "Passing Wizard/Tony Parker/Lou Williams")
-jamal = User.create(name: "Jamal", password: "abc123", age: 28, height: "6ft 5in", location: "Brooklyn", position: "PF/C", style: "Rim runner/handles/Boogie Cousins")
+cam = User.create(name: "Cam", username: "Cam",password: "abc123", age: 27, height: "5ft 9in", location: "Brooklyn", position: "PG/SG", style: "Facilitator/Bucket getter/Steve Nash")
+massi = User.create(name: "Massi", username: "Machi", password: "abc123", age: 31, height: "5ft 3in", location: "Queens", position: "PG", style: "Scrappy defender/Patrick Beverly")
+hasibul = User.create(name: "Hasibul", username: "Hasi", password: "abc123", age: 28, height: "6ft 1in", location: "Staten Island", position: "SF", style: "Rim protector/lob finisher/Young Blake Griffin")
+crunchy = User.create(name: "Chris", username: "Crunchy", password: "abc123", age: 27, height: "5ft 11in", location: "Brooklyn", position: "SF", style: "The enforcer/sets tough screens/Kendrick Perkins")
+robin = User.create(name: "Robin", username: "Robinho", password: "abc123", age: 27, height: "6ft 3in", location: "Brooklyn", position: "PF", style: "Stretch 4/Kristaps Porzingis")
+ak = User.create(name: "Akram", username: "AK", password: "abc123", age: 28, height: "5ft 7in", location: "Brooklyn", position: "PG", style: "Passing Wizard/Tony Parker/Lou Williams")
+jamal = User.create(name: "Jamal", username: "J fresh", password: "abc123", age: 28, height: "6ft 5in", location: "Brooklyn", position: "PF/C", style: "Rim runner/handles/Boogie Cousins")
 
 pier2 = Court.create(
     name: "Brooklyn Bridge Park",

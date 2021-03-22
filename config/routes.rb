@@ -8,5 +8,9 @@ Rails.application.routes.draw do
 
   get '/runs', to: 'runs#index'
   get '/runs/:id', to: 'runs#show'
+  post '/runs', to: 'runs#create'
+
+  post '/login', to: "users#login"
+  get '/me', to: "users#show"
 
 end

@@ -12,7 +12,7 @@ class RunsController < ApplicationController
 
     def create 
         run = Run.create(run_params)
-        render json: user_cartoon
+        render json: run
 
     end
 
