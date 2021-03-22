@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ballgifs
   # resources :runs
   # resources :courts
   resources :users
@@ -12,5 +13,7 @@ Rails.application.routes.draw do
 
   post '/login', to: "users#login"
   get '/me', to: "users#show"
+
+  get '/ball_gifs', to: 'ballgifs#index'
 
 end

@@ -63,12 +63,44 @@ batterypark = Court.create(
     img_url: "https://c8.alamy.com/comp/E62F2T/basketball-court-at-nelson-a-rockefeller-park-in-battery-park-city-E62F2T.jpg"
 )
 
+harrison = Court.create(
+    name: "Harrison and West River",
+    address: "Hudson River Greenway",
+    borough: "Manhattan",
+    zip_code: 10282,
+    condition: "Great", 
+    latitude: 40.71949406468322,
+    longitude: -74.01290413314979,
+    trains: [ "2", "3", "A", "C", "N", "R", "W"], 
+    img_url: "https://hudsonriverpark.org/app/uploads/2020/06/Activities-HRPK-Basketball-P40-Featured-scaled.jpg"
+)
+
 run1 = Run.create(name: "Brooklyn Bridge Park", user_id: 1, court_id: 1)
 run2 = Run.create(name: "Brooklyn Bridge Park", user_id: 2, court_id: 1)
 run3 = Run.create(name: "Brooklyn Bridge Park", user_id: 3, court_id: 1)
 run4 = Run.create(name: "Brooklyn Bridge Park", user_id: 4, court_id: 1)
 run5 = Run.create(name: "West 4th", user_id: 5, court_id: 1)
 run6 = Run.create(name: "West 4th", user_id: 6, court_id: 1)
+
+kd_backpack = Ballgif.create(name: "KD backpack", url: "https://media0.giphy.com/media/jroIaEjbXpSTMxBuo7/source.gif")
+lebron1 = Ballgif.create(name: "Lebron1", url: "https://media2.giphy.com/media/WpxeQuE1hfvLow9Ir3/source.gif")
+lebron2 = Ballgif.create(name: "Lebron12", url: "https://media2.giphy.com/media/ZZTC9RP7cVYqw5MnXW/giphy.gif")
+ja = Ballgif.create(name: "Ja", url: "https://media3.giphy.com/media/gfGvtlxqgYKIEqSEdE/giphy.gif")
+giannie = Ballgif.create(name: "Giannie", url: "https://media3.giphy.com/media/jSKAFBcdOzZQmcYYpO/giphy.gif")
+joel = Ballgif.create(name: "Joel", url: "https://media0.giphy.com/media/TFCZhTQytF04Y0dbXE/giphy.gif")
+westbrook = Ballgif.create(name: "Westbrook", url: "https://media2.giphy.com/media/Xbs14TYdruPmZ1iRSE/giphy.gif")
+booker = Ballgif.create(name: "Booker", url: "https://media3.giphy.com/media/mED0gOvnbDojRp2VMI/giphy.gif")
+wall = Ballgif.create(name: "Wall", url: "https://media4.giphy.com/media/J46RvVjx4vEwFIawmt/giphy-preview.gif")
+melo = Ballgif.create(name: "Melo", url: "https://media2.giphy.com/media/fAQHjEYDT9GweWIcBq/giphy.gif")
+kyrie = Ballgif.create(name: "Kyrie", url: "https://media1.giphy.com/media/cj3Aaxo5Ljjmmq6Aaz/200.gif")
+demar = Ballgif.create(name: "Demar", url: "https://media2.giphy.com/media/XymHbnizDDQPt27jZQ/source.gif")
+pg = Ballgif.create(name: "PG", url: "https://media4.giphy.com/media/RNJyBC489b6XKw4c0B/giphy.gif")
+kawhi = Ballgif.create(name: "Kawhi", url: "https://media1.giphy.com/media/ZBcg4lqi7hf8kVNHwL/source.gif")
+kd2 = Ballgif.create(name: "KD", url: "https://media4.giphy.com/media/QvvEJpbz26x27gJAXd/source.gif")
+joker = Ballgif.create(name: "Joker", url: "https://media4.giphy.com/media/KayQlS4YncKMN2wk9i/giphy.gif")
+ben = Ballgif.create(name: "Ben", url: "https://media2.giphy.com/media/WtC2VCQEjneP3dxt8x/giphy.gif")
+jimmy = Ballgif.create(name: "Jimmy", url: "https://media4.giphy.com/media/Qw2g1h4HBzWfLGPSPc/source.gif")
+kat = Ballgif.create(name: "KAT", url: "https://media4.giphy.com/media/lSUq9K6i6VCLlH9UEM/giphy.gif")
 
 
 puts "Data is seeded!"

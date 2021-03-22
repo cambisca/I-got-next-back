@@ -1,0 +1,2 @@
+class Ballgif < ApplicationRecord
+end
