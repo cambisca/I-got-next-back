@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :favorites
   resources :ballgifs
   # resources :runs
   # resources :courts
