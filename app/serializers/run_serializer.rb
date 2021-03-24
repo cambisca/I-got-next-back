@@ -1,5 +1,4 @@
 class RunSerializer < ActiveModel::Serializer
-  attributes :id, :name, :court_id, :user_id
-  
+  attributes :id, :name, :user, :court
   # belongs_to :court
 end

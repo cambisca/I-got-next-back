@@ -26,7 +26,7 @@ class RunsController < ApplicationController
     private
 
     def run_params
-        params.permit(:id, :name, :user_id, :court_id)
+        params.permit(:id, :name, :user, :court)
 
     end
 end

@@ -17,4 +17,7 @@ Rails.application.routes.draw do
 
   get '/ball_gifs', to: 'ballgifs#index'
 
+  get '/favorites', to: 'favorites#index'
+  post './favorites', to: 'favorites#create'
+
 end
