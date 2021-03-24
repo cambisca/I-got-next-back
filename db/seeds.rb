@@ -66,7 +66,7 @@ batterypark = Court.create(
 harrison = Court.create(
     name: "Harrison and West River",
     address: "Hudson River Greenway",
-    borough: "Manhattan",
+    borough: "New York",
     zip_code: 10282,
     condition: "Great", 
     latitude: 40.71949406468322,
