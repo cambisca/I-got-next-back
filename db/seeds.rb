@@ -1,10 +1,8 @@
 Court.destroy_all
-
 User.destroy_all
-
 Favorite.destroy_all
-
 Run.destroy_all
+Review.destroy_all
 
 
 cam = User.create(name: "Cam", username: "Cam",password: "abc123", age: 27, height: "5ft 9in", location: "Brooklyn", position: "PG/SG", style: "Facilitator/Bucket getter/Steve Nash")
@@ -101,6 +99,9 @@ joker = Ballgif.create(name: "Joker", url: "https://media4.giphy.com/media/KayQl
 ben = Ballgif.create(name: "Ben", url: "https://media2.giphy.com/media/WtC2VCQEjneP3dxt8x/giphy.gif")
 jimmy = Ballgif.create(name: "Jimmy", url: "https://media4.giphy.com/media/Qw2g1h4HBzWfLGPSPc/source.gif")
 kat = Ballgif.create(name: "KAT", url: "https://media4.giphy.com/media/lSUq9K6i6VCLlH9UEM/giphy.gif")
+
+review1 = Review.create(rating: 5, comment: "Dope court, always lots of people", user_id: User.third.id, court_id: Court.first.id)
+review2 = Review.create(rating: 5, comment: "Overhang is great for rain.", user_id: User.first.id, court_id: Court.first.id)
 
 
 puts "Data is seeded!"

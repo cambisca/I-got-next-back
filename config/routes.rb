@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reviews
   resources :favorites
   resources :ballgifs
   # resources :runs
@@ -20,5 +21,7 @@ Rails.application.routes.draw do
   get '/favorites', to: 'favorites#index'
   post '/favorites', to: 'favorites#create'
   delete "/favorites", to: "favorites#destroy"
+
+  get '/reviews', to: 'reviews#index'
 
 end
