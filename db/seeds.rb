@@ -102,6 +102,11 @@ kat = Ballgif.create(name: "KAT", url: "https://media4.giphy.com/media/lSUq9K6i6
 
 review1 = Review.create(rating: 5, comment: "Dope court, always lots of people", user_id: User.third.id, court_id: Court.first.id)
 review2 = Review.create(rating: 5, comment: "Overhang is great for rain.", user_id: User.first.id, court_id: Court.first.id)
+review3 = Review.create(rating: 2, comment: "Everyone smelt like booze", user_id: User.second.id, court_id: Court.second.id)
+review4 = Review.create(rating: 3, comment: "I was terrible, I blame the court", user_id: User.fifth.id, court_id: Court.second.id)
+review5 = Review.create(rating: 4, comment: "Was really feeling the vibes bruh", user_id: User.third.id, court_id: Court.fifth.id)
+review6 = Review.create(rating: 1, comment: "It was too sunny", user_id: User.fifth.id, court_id: Court.first.id)
+
 
 
 puts "Data is seeded!"
