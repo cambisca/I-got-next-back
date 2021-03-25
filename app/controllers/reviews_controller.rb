@@ -23,10 +23,14 @@ class ReviewsController < ApplicationController
         render json: review_to_delete
     end
 
+    def update
+
+    end 
+
     private
 
     def review_params
-        params.permit(:id, :user_id, :court_id)
+        params.permit(:id, :user_id, :court_id, :comment)
 
     end
 end
