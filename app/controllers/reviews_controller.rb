@@ -23,8 +23,19 @@ class ReviewsController < ApplicationController
         render json: review_to_delete
     end
 
-    def update
+    def edit 
+        review = Review.find(params[:id])
+        review.update(review_params)
 
+        render json: review
+    end 
+
+    def update
+        review = Review.find(params[:id])
+        review.update(
+        params.permit(:id, :user_id, :court_id, :comment)
+    )
+        render json: review
     end 
 
     private
