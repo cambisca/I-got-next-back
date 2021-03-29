@@ -13,10 +13,9 @@ Rails.application.routes.draw do
   get '/runs/:id', to: 'runs#show'
   post '/runs', to: 'runs#create'
 
-  post '/login', to: "users#login"
   get '/me', to: "users#show"
-
-  get '/ball_gifs', to: 'ballgifs#index'
+  post '/login', to: "users#login"
+  post '/signup', to: "users#signup"
 
   get '/favorites', to: 'favorites#index'
   post '/favorites', to: 'favorites#create'
@@ -26,5 +25,7 @@ Rails.application.routes.draw do
   post '/reviews', to: 'reviews#create'
   delete "/reviews", to: "reviews#destroy"
   patch '/reviews/:id', to: 'reviews#update'
+
+  get '/ball_gifs', to: 'ballgifs#index'
 
 end
