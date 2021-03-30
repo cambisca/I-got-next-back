@@ -6,12 +6,13 @@ Review.destroy_all
 
 
 cam = User.create(name: "Cam", username: "Cam",password: "abc123", age: 27, height: "5ft 9in", location: "Brooklyn", position: "PG/SG", style: "Facilitator/Bucket getter/Steve Nash")
-massi = User.create(name: "Massi", username: "Machi", password: "abc123", age: 31, height: "5ft 3in", location: "Queens", position: "PG", style: "Scrappy defender/Patrick Beverly")
+elvis = User.create(name: "Elvis", username: "Elvis", password: "abc123", age: 31, height: "5ft 3in", location: "Queens", position: "PG", style: "Scrappy defender/Patrick Beverly")
 hasibul = User.create(name: "Hasibul", username: "Hasi", password: "abc123", age: 28, height: "6ft 1in", location: "Staten Island", position: "SF", style: "Rim protector/lob finisher/Young Blake Griffin")
-crunchy = User.create(name: "Chris", username: "Crunchy", password: "abc123", age: 27, height: "5ft 11in", location: "Brooklyn", position: "SF", style: "The enforcer/sets tough screens/Kendrick Perkins")
-robin = User.create(name: "Robin", username: "Robinho", password: "abc123", age: 27, height: "6ft 3in", location: "Brooklyn", position: "PF", style: "Stretch 4/Kristaps Porzingis")
-ak = User.create(name: "Akram", username: "AK", password: "abc123", age: 28, height: "5ft 7in", location: "Brooklyn", position: "PG", style: "Passing Wizard/Tony Parker/Lou Williams")
-jamal = User.create(name: "Jamal", username: "J fresh", password: "abc123", age: 28, height: "6ft 5in", location: "Brooklyn", position: "PF/C", style: "Rim runner/handles/Boogie Cousins")
+victor = User.create(name: "Victor", username: "Victor", password: "abc123", age: 27, height: "5ft 11in", location: "Brooklyn", position: "SF", style: "The enforcer/sets tough screens/Kendrick Perkins")
+sam = User.create(name: "Sam", username: "Sam", password: "abc123", age: 27, height: "6ft 3in", location: "Brooklyn", position: "PF", style: "Stretch 4/Kristaps Porzingis")
+josh = User.create(name: "Josh", username: "Josh", password: "abc123", age: 28, height: "5ft 7in", location: "Brooklyn", position: "PG", style: "Passing Wizard/Tony Parker/Lou Williams")
+woodelin = User.create(name: "Woodelin", username: "Woodelin", password: "abc123", age: 28, height: "6ft 5in", location: "Brooklyn", position: "PF/C", style: "Rim runner/handles/Boogie Cousins")
+kody = User.create(name: "Kody", username: "Sassy_kody", password: "abc123", age: 28, height: "6ft 5in", location: "Brooklyn", position: "PF/C", style: "Rim runner/Shot Blocker/Mitchel Robinson")
 
 pier2 = Court.create(
     name: "Brooklyn Bridge Park",
@@ -77,8 +78,8 @@ run1 = Run.create(name: "Brooklyn Bridge Park", user_id: 1, court_id: 1)
 run2 = Run.create(name: "Brooklyn Bridge Park", user_id: 2, court_id: 1)
 run3 = Run.create(name: "Brooklyn Bridge Park", user_id: 3, court_id: 1)
 run4 = Run.create(name: "Brooklyn Bridge Park", user_id: 4, court_id: 1)
-run5 = Run.create(name: "West 4th", user_id: 5, court_id: 1)
-run6 = Run.create(name: "West 4th", user_id: 6, court_id: 1)
+run5 = Run.create(name: "West 4th", user_id: 5, court_id: 2)
+run6 = Run.create(name: "West 4th", user_id: 6, court_id: 2)
 
 kd_backpack = Ballgif.create(name: "KD backpack", url: "https://media0.giphy.com/media/jroIaEjbXpSTMxBuo7/source.gif")
 lebron1 = Ballgif.create(name: "Lebron1", url: "https://media2.giphy.com/media/WpxeQuE1hfvLow9Ir3/source.gif")

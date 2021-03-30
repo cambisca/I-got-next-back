@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/runs', to: 'runs#index'
   get '/runs/:id', to: 'runs#show'
   post '/runs', to: 'runs#create'
+  delete '/runs/:id', to: 'runs#destroy'
 
   get '/me', to: "users#show"
   post '/login', to: "users#login"
