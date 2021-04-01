@@ -5,7 +5,7 @@ Run.destroy_all
 Review.destroy_all
 
 
-cam = User.create(name: "Cam", username: "WuTangCam",password: "abc123", age: 27, height: "5ft 9in", location: "Brooklyn", position: "PG/SG", style: "Facilitator/Bucket getter/Steve Nash", image: "https://scontent-lga3-1.xx.fbcdn.net/v/t31.18172-8/461239_10151365997924377_1971419988_o.jpg?_nc_cat=107&ccb=1-3&_nc_sid=e3f864&_nc_ohc=eHMlLCy7D08AX-RfRU3&_nc_ht=scontent-lga3-1.xx&oh=d4050d3f631da4dd96826ba4f65f6575&oe=608ADE29")
+cam = User.create(name: "Cam", username: "WuTangCam", password: "abc123", age: 27, height: "5ft 9in", location: "Brooklyn", position: "PG/SG", style: "Facilitator/Bucket getter/Steve Nash", image: "https://scontent-lga3-1.xx.fbcdn.net/v/t31.18172-8/461239_10151365997924377_1971419988_o.jpg?_nc_cat=107&ccb=1-3&_nc_sid=e3f864&_nc_ohc=eHMlLCy7D08AX-RfRU3&_nc_ht=scontent-lga3-1.xx&oh=d4050d3f631da4dd96826ba4f65f6575&oe=608ADE29")
 elvis = User.create(name: "Elvis", username: "Easy_mon3Y", password: "abc123", age: 31, height: "5ft 3in", location: "Queens", position: "PG", style: "Scrappy defender/Patrick Beverly", image: "https://ca.slack-edge.com/T02MD9XTF-U01FJ8VBFLY-85af6a7afd44-512")
 hasibul = User.create(name: "Hasibul", username: "Hasee_u_L8tr", password: "abc123", age: 28, height: "6ft 1in", location: "Staten Island", position: "SF", style: "Rim protector/lob finisher/Young Blake Griffin", image: "https://ca.slack-edge.com/T02MD9XTF-U01CRNE8X3M-0cc327fd8ec0-512")
 victor = User.create(name: "Victor", username: "Papi_Vic", password: "abc123", age: 27, height: "5ft 11in", location: "Brooklyn", position: "SF", style: "The enforcer/sets tough screens/Kendrick Perkins", image: "https://ca.slack-edge.com/T02MD9XTF-U01AT8SPPCN-9199fddd7d96-512")
@@ -54,7 +54,7 @@ west4th = Court.create(
     latitude: 40.73215418335328, 
     longitude: -74.0007750693177,
     trains: [ "A", "C", "E", "B", "D", "F", "M" ],
-    img_url: "https://www.google.com/maps/uv?pb=!1s0x89c25993dbd3d3af%3A0x895a22ae62d7c144!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipOh4QXq9AdBEMwIuomONf4YqSB07vdfTQ7Simhn%3Dw624-h352-k-no!5swest%204th%20courts%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e10!2sAF1QipOh4QXq9AdBEMwIuomONf4YqSB07vdfTQ7Simhn&hl=en&sa=X&ved=2ahUKEwjc8deh5NzvAhVTZc0KHfAZDPMQoiowFHoECCgQAw#"
+    img_url: "https://live.staticflickr.com/6071/6068894701_1d35efac5c_b.jpg"
 )
 
 rucker = Court.create(
@@ -117,6 +117,17 @@ biggie = Court.create(
     img_url: "https://lh5.googleusercontent.com/p/AF1QipNKhz9iw09y7aQRinw8TVcwAd9jS-fko8KXNCgP=w408-h272-k-no"
 )
 
+edmonds = Court.create(
+    name: "Stanton", 
+    address: "Sara D. Roosevelt Park Stanton St &, Chrystie St",
+    borough: "New York", 
+    zip_code: 10002,
+    condition: "👌👌👌👌👌",
+    latitude: 40.72292939001785, 
+    longitude: -73.99142907301471, 
+    trains: ["B", "Q", "2", "3", "4", "5"],
+    img_url: "https://s3.amazonaws.com/nikeinc/assets/63791/stanton-court-kaws-3_rectangle_1600.JPG?1478723849"
+)
 
 
 run1 = Run.create(name: "Brooklyn Bridge Park", user_id: 10, court_id: 1)
@@ -158,14 +169,24 @@ jimmy = Ballgif.create(name: "Jimmy", url: "https://media4.giphy.com/media/Qw2g1
 kat = Ballgif.create(name: "KAT", url: "https://media4.giphy.com/media/lSUq9K6i6VCLlH9UEM/giphy.gif")
 
 review1 = Review.create(rating: 5, comment: "Dope court, always lots of people. Def come here if you're trynna game and catch some good competition.", user_id: User.third.id, court_id: Court.first.id)
-review2 = Review.create(rating: 5, comment: "Overhang is great for rain", user_id: User.first.id, court_id: Court.first.id)
+review2 = Review.create(rating: 5, comment: "Overhang is great for rain", user_id: User.all[11].id, court_id: Court.first.id)
 review3 = Review.create(rating: 2, comment: "Everyone smelt like booze and cigarettes. ", user_id: User.second.id, court_id: Court.second.id)
-review4 = Review.create(rating: 3, comment: "I was terrible, I blame the court", user_id: User.fifth.id, court_id: Court.second.id)
+review4 = Review.create(rating: 3, comment: "I was terrible, I blame the court", user_id: User.all[18].id, court_id: Court.second.id)
 review5 = Review.create(rating: 4, comment: "Was really feeling the vibes bruh", user_id: User.third.id, court_id: Court.first.id)
 review6 = Review.create(rating: 1, comment: "It was too sunny. It was getting in my eyes and I got burnt. You will NEVER see me here again!", user_id: User.fifth.id, court_id: Court.second.id)
-review6 = Review.create(rating: 1, comment: "I've never actually played basketball there but I watch all the time. The boys are spicy :)", user_id: User.fifth.id, court_id: Court.first.id)
+review7 = Review.create(rating: 1, comment: "I've never actually played basketball there but I watch all the time. I saw Jadakiss there one time.", user_id: User.all[9].id, court_id: Court.first.id)
+review8 = Review.create(rating: 4, comment: "Why does everyone at this court always have to play shirtless? I literally moved away from venice beach for this very reason!", user_id: User.all[12].id, court_id: 3)
+review9 = Review.create(rating: 3, comment: "The best hot dog stand is on the corner. Couldn't tell you much about the court though.", user_id: User.all[19].id , court_id: 5)
+review10 = Review.create(rating: 5, comment: "Nah you'll never see me here again. I got dunked on twice! How am I suppose to look my son in the face tonight???", user_id: User.all[10].id , court_id: 3)
 
-
+fav1 = Favorite.create(user_id: 1, court_id: 2)
+fav2 = Favorite.create(user_id: 1, court_id: 3)
+fav3 = Favorite.create(user_id: 1, court_id: 4)
+fav4 = Favorite.create(user_id: 1, court_id: 5)
+fav5 = Favorite.create(user_id: 1, court_id: 6)
+fav6 = Favorite.create(user_id: 1, court_id: 7)
+fav7 = Favorite.create(user_id: 1, court_id: 8)
+fav8 = Favorite.create(user_id: 1, court_id: 9)
 
 
 puts "Data is seeded!"
