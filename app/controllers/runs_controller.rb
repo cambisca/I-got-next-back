@@ -12,7 +12,12 @@ class RunsController < ApplicationController
 
     def create 
         run = Run.create(run_params)
-        render json: run
+        if run.valid?
+            render json: run
+        else
+            render json: { errors: run.errors.full_messages }, status: :unprocessable_entity
+            
+        end
 
     end
 
